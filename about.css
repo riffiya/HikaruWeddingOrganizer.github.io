@@ -1,0 +1,303 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 1rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(67, 65, 65, 0.8);
+  }
+  
+  .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    color: #ffffff !important;
+  }
+  
+  .nav-link:hover {
+    color: #f2e7b5 !important;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: #f2e7b5 !important;
+    border-bottom: 2px solid #f2e7b5;
+  }
+  
+  /* Dropdown  */
+  .dropdown-menu {
+    background-color: rgba(33, 37, 41, 0.9);
+    border: none;
+    border-radius: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .dropdown-item {
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(242, 231, 181, 0.1);
+    color: #f2e7b5;
+  }
+  
+  .dropdown-toggle::after {
+    border-top-color: #ffffff;
+    transition: border-top-color 0.3s ease;
+  }
+  
+  .dropdown-toggle:hover::after {
+    border-top-color: #f2e7b5;
+  }
+  
+  /* Jumbotron */
+.jumbotron {
+    height: 100vh; 
+    background-image: url("https://i.ytimg.com/vi/PE6AcwSm0YE/hqdefault.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin-top: -75px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+  
+  .jumbotron .content {
+    text-align: center;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 30px 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .jumbotron .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  /* teks judul di section */
+  .about-us {
+    background-color: #f9f9f9; 
+    color: #333; 
+  }
+  
+  .about-us h5 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #888;
+  }
+  
+  .about-us h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+ 
+  /* Visi Misi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffefd; 
+    color: #5c4033; 
+  }
+  
+  .about-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fffdf8; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .about-container h1 {
+    color: #b08968; 
+    margin-bottom: 20px;
+  }
+  
+  .about-container .intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #6d4c41; 
+  }
+  
+  .vision-mission {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .vision-mission .box {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    background-color: #f9f0e6; 
+    border: 1px solid #e6d8c3; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .vision-mission .box h2 {
+    color: #9c7e66; 
+    margin-bottom: 10px;
+  }
+  
+  .vision-mission .box p,
+  .vision-mission .box ul {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    color: #5c4033; 
+  }
+  
+  .vision-mission .box ul {
+    padding-left: 20px;
+  }
+  
+  .vision-mission .box ul li {
+    margin-bottom: 8px;
+  }
+  
+  @media (max-width: 600px) {
+    .vision-mission {
+      flex-direction: column;
+    }
+  }
+  
+  /* Footer */
+  .simple-footer {
+    background-color: #3b2f2f;
+    text-align: center;
+    padding: 40px 20px;
+    color: #ffffff; 
+  }
+  
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    width: 120px;
+    height: auto;
+    display: inline-block;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5)); 
+  }
+  
+  .footer-content {
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    color: #f4e8da; 
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ffcc00; 
+    transform: scale(1.2);
+  }
+  
+  footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #d3cbc6; 
+  }
+  
+  /* filososfi */
+.philosophy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f0e6; 
+    padding: 60px 20px;
+  }
+  
+  .philosophy-box {
+    background-color: #fff; 
+    border: 1px solid #e6d8c3; 
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .philosophy-box h2 {
+    font-size: 28px;
+    color: #9c7e66; 
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .philosophy-box p {
+    font-size: 18px;
+    color: #5c4033; 
+    line-height: 1.6;
+  }
+  
+  .philosophy-box p::before {
+    content: '"';
+    font-size: 30px;
+    color: #9c7e66; 
+    position: absolute;
+    top: -20px;
+    left: 20px;
+  }
+  
+  .philosophy-box p::after {
+    content: '"';
+    font-size: 30px;
+    color: #9c7e66;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .philosophy-box {
+      padding: 20px;
+      max-width: 90%;
+    }
+  
+    .philosophy-box h2 {
+      font-size: 24px;
+    }
+  
+    .philosophy-box p {
+      font-size: 16px;
+    }
+  }
+  
+  

@@ -1,0 +1,410 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(79, 78, 78, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: rgba(79, 78, 78, 0.8);
+}
+
+.nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+  color: #f0b70e !important;
+}
+
+.nav-link:hover {
+  color: #f2e7b5 !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #f2e7b5 !important;
+  border-bottom: 2px solid #f2e7b5;
+}
+
+/* Dropdown  */
+.dropdown-menu {
+  background-color: rgba(79, 78, 78, 0.9);
+  border: none;
+  border-radius: 0;
+  margin-top: 0.5rem;
+}
+
+.dropdown-item {
+  color: #f0b70e;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: rgba(242, 231, 181, 0.1);
+  color: #f2e7b5;
+}
+
+.dropdown-toggle::after {
+  border-top-color: #f0b70e;
+  transition: border-top-color 0.3s ease;
+}
+
+.dropdown-toggle:hover::after {
+  border-top-color: #f2e7b5;
+}
+
+.dropdown-toggle.active {
+  font-weight: bold;
+  color: #f2e7b5 !important;
+  border-bottom: 2px solid #f2e7b5;
+}
+
+/* Jumbotron */
+.jumbotron {
+  height: 100vh;
+  background-image: url("https://img.freepik.com/premium-photo/tree-with-lights-table-setting-wedding-reception_662214-92006.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .content {
+  text-align: center;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+/* Contact */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #304f3a;
+  margin-bottom: 30px;
+}
+
+/* Contact Tabel */
+.contact-table-container {
+  margin-bottom: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f0b70e;
+  color: white;
+  text-align: center;
+}
+
+table td {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #f2e7b5;
+}
+
+table td {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* General Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* FAQ Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #304f3a;
+  margin-bottom: 30px;
+}
+
+/* Accordion Styles */
+.accordion-button {
+  background-color: #5a5443;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px;
+  border: 1px solid #f2d786;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #f2e7b5;
+  color: #304f3a;
+}
+
+.accordion-body {
+  background-color: #f9f9f9;
+  padding: 15px;
+  font-size: 1rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+}
+
+/* Footer */
+.simple-footer {
+  background-color: #3b2f2f;
+  text-align: center;
+  padding: 40px 20px;
+  color: #ffffff;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  display: inline-block;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.footer-content {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #f4e8da;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+  transform: scale(1.2);
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #d3cbc6;
+}
+
+/* contact */
+.contact-info-section {
+  background-color: #f8f8f8;
+  padding: 50px 20px;
+  margin-top: 30px;
+}
+
+.contact-info-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #304f3a;
+  font-weight: bold;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #f0b70e;
+  margin-bottom: 15px;
+}
+
+.contact-item a {
+  color: #304f3a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  color: #f0b70e;
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+  .contact-methods {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-item {
+    width: 100%;
+  }
+}
+
+/* animasi */
+.navbar {
+  animation: slideInDown 1s ease-in-out;
+}
+
+.jumbotron .content {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.about-us h5,
+.about-us h2,
+.about-us p,
+.about-us button {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.wedding-journey .step {
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.price-list .pricing-card {
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+.simple-footer {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

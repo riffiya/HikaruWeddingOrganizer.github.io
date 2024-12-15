@@ -1,0 +1,484 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: rgba(31, 31, 31, 0.8);
+}
+
+.nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #f2e7b5 !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #f2e7b5 !important;
+  border-bottom: 2px solid #f2e7b5;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: rgba(33, 37, 41, 0.9);
+  border: none;
+  border-radius: 0;
+  margin-top: 0.5rem;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: rgba(242, 231, 181, 0.1);
+  color: #f2e7b5;
+}
+
+.dropdown-toggle::after {
+  border-top-color: #ffffff;
+  transition: border-top-color 0.3s ease;
+}
+
+.dropdown-toggle:hover::after {
+  border-top-color: #f2e7b5;
+}
+
+/* jumbotron */
+.jumbotron {
+  height: 100vh;
+  background-image: url("https://w0.peakpx.com/wallpaper/324/667/HD-wallpaper-bride-and-groom-bride-wedding-groom-love-landscape.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.jumbotron .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+/* ABOUT */
+.about-us {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-us h5 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.about-us h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+button {
+  --glow-color: rgb(240, 224, 200);
+  --glow-spread-color: rgba(240, 224, 200, 0.5);
+  --enhanced-glow-color: rgb(250, 240, 220);
+  --btn-color: rgb(130, 110, 90);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--btn-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--glow-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 3em 0.75em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--enhanced-glow-color);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(1.5em);
+  opacity: 0.5;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+button:hover {
+  color: var(--glow-color);
+  background-color: var(--btn-color);
+  box-shadow: 0 0 1.5em 0.25em var(--enhanced-glow-color), 0 0 3.5em 1.5em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+button:active {
+  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 2.5em 1.5em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--enhanced-glow-color);
+  transform: scale(0.98);
+}
+
+/* journey */
+.wedding-journey {
+  background-color: #f0f0f0;
+  padding: 60px 0;
+}
+
+.wedding-journey h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 30px;
+}
+
+.wedding-journey p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.step-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.step-content {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.step-content h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  margin-bottom: 20px;
+}
+
+.step-image {
+  flex: 1;
+}
+
+.step-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .step {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .step-image {
+    text-align: center;
+  }
+
+  .step-image img {
+    max-width: 80%;
+  }
+}
+
+/* pricelist */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #304f3a;
+}
+
+.pricing-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card.featured {
+  background-color: #f2e7b5;
+  border: 2px solid #304f3a;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.package-title {
+  font-size: 1.5rem;
+  color: #304f3a;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f0b70e;
+}
+
+.features {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.features li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.features i {
+  color: #304f3a;
+  margin-right: 10px;
+}
+
+.features .fa-times-circle {
+  color: #e74c3c;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #304f3a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f0b70e;
+  color: #fff;
+}
+
+/* Responsive Pricing */
+@media (max-width: 768px) {
+  .pricing-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .pricing-card {
+    padding: 20px;
+  }
+
+  .price {
+    font-size: 1.8rem;
+  }
+}
+
+/* Footer */
+.simple-footer {
+  background-color: #3b2f2f;
+  text-align: center;
+  padding: 40px 20px;
+  color: #ffffff;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  display: inline-block;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.footer-content {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #f4e8da;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+  transform: scale(1.2);
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #d3cbc6;
+}
+
+/* animasi */
+.navbar {
+  animation: slideInDown 1s ease-in-out;
+}
+
+.jumbotron .content {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.about-us h5, 
+.about-us h2, 
+.about-us p, 
+.about-us button {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.wedding-journey .step {
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.price-list .pricing-card {
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+.simple-footer {
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

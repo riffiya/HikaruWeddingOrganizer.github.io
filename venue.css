@@ -1,0 +1,370 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(79, 78, 78, 0.8);;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: rgba(79, 78, 78, 0.8);
+}
+
+.nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+  color: #f0b70e !important;
+}
+
+.nav-link:hover {
+  color: #f2e7b5 !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #f2e7b5 !important;
+  border-bottom: 2px solid #f2e7b5;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  background-color: rgba(79, 78, 78, 0.9);
+  border: none;
+  border-radius: 0;
+  margin-top: 0.5rem;
+}
+
+.dropdown-item {
+  color: #f0b70e;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: rgba(242, 231, 181, 0.1);
+  color: #f2e7b5;
+}
+
+/* Ensure dropdown toggle arrow changes color on hover */
+.dropdown-toggle::after {
+  border-top-color: #f0b70e;
+  transition: border-top-color 0.3s ease;
+}
+
+.dropdown-toggle:hover::after {
+  border-top-color: #f2e7b5;
+}
+
+/* Active dropdown toggle */
+.dropdown-toggle.active {
+  font-weight: bold;
+  color: #f2e7b5 !important;
+  border-bottom: 2px solid #f2e7b5;
+}
+
+/* Jumbotron */
+.jumbotron {
+  height: 100vh; /* Full-screen height */
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20240520/pngtree-beautiful-decoration-of-wedding-hall-image_15804295.jpg");
+  background-size: cover; /* Pastikan gambar menutupi seluruh area */
+  background-position: center; /* Gambar di tengah */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
+  margin-top: -75px; /* Mengurangi jarak default dari navbar */
+  display: flex;
+  align-items: center; /* Konten vertikal di tengah */
+  justify-content: center; /* Konten horizontal di tengah */
+  color: white; /* Warna teks */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bayangan teks */
+}
+
+.jumbotron .content {
+  text-align: center;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.6); /* Background hitam transparan */
+  padding: 30px 20px; /* Memberikan ruang di sekitar teks */
+  border-radius: 10px; /* Membuat sudut sedikit melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Menambah bayangan pada box */
+}
+
+.jumbotron .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+/* venue */
+/* Tambahkan class .wine-details-container */
+.wedding-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1200px; /* Batas lebar maksimal */
+}
+
+/* Teks Kiri */
+.wedding-details-text {
+  max-width: 500px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.wedding-details-text h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #c69a60;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.wedding-details-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wedding-details-text ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.wedding-details-text .footer-info {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #666;
+}
+
+.wedding-details-text .footer-info a {
+  color: #c69a60;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wedding-details-text .footer-info a:hover {
+  text-decoration: underline;
+}
+
+/* Gambar Kanan */
+.wedding-details-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wedding-details-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gambar Kanan Hover */
+.wedding-details-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.wedding-details-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.wedding-details-image:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay Tulisan */
+.wedding-details-image::before {
+  content: "Garden Wedding";
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+  text-align: center;
+}
+
+.wedding-details-image:hover::before {
+  opacity: 1;
+  bottom: 30px;
+}
+
+/* Responsif */
+@media screen and (max-width: 1024px) {
+  .wedding-details-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .wedding-details-image img {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wedding-details-text h1 {
+    font-size: 28px;
+  }
+
+  .wedding-details-text ul li {
+    font-size: 14px;
+  }
+
+  .wedding-details-text .footer-info {
+    font-size: 12px;
+  }
+
+  .wedding-details-image img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wedding-details-text h1 {
+    font-size: 24px;
+  }
+
+  .wedding-details-text ul li {
+    font-size: 13px;
+  }
+}
+
+/* Footer */
+.simple-footer {
+  background-color: #3b2f2f;
+  text-align: center;
+  padding: 40px 20px;
+  color: #ffffff;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  display: inline-block;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.footer-content {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #f4e8da;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+  transform: scale(1.2);
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #d3cbc6;
+}
+
+/* animasi */
+.navbar {
+  animation: slideInDown 1s ease-in-out;
+}
+
+.jumbotron .content {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.about-us h5, 
+.about-us h2, 
+.about-us p, 
+.about-us button {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.wedding-journey .step {
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.price-list .pricing-card {
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+.simple-footer {
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
